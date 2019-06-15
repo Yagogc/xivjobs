@@ -1,32 +1,32 @@
 // TANKS
 import war from "../assets/8bit/war.png";
-import warIcon from "../assets/icon/war.png";
+import warIcon from "../assets/icons/war.png";
 import drk from "../assets/8bit/drk.png";
-import drkIcon from "../assets/icon/drk.png";
+import drkIcon from "../assets/icons/drk.png";
 import pld from "../assets/8bit/pld.png";
-import pldIcon from "../assets/icon/pld.png";
+import pldIcon from "../assets/icons/pld.png";
 import drg from "../assets/8bit/drg.png";
 //DPS
-import drgIcon from "../assets/icon/drg.png";
+import drgIcon from "../assets/icons/drg.png";
 import mnk from "../assets/8bit/mnk.png";
-import mnkIcon from "../assets/icon/mnk.png";
+import mnkIcon from "../assets/icons/mnk.png";
 import nin from "../assets/8bit/nin.png";
-import ninIcon from "../assets/icon/nin.png";
+import ninIcon from "../assets/icons/nin.png";
 import brd from "../assets/8bit/brd.png";
-import brdIcon from "../assets/icon/brd.png";
+import brdIcon from "../assets/icons/brd.png";
 import mch from "../assets/8bit/mch.png";
-import mchIcon from "../assets/icon/mch.png";
+import mchIcon from "../assets/icons/mch.png";
 import blm from "../assets/8bit/blm.png";
-import blmIcon from "../assets/icon/blm.png";
+import blmIcon from "../assets/icons/blm.png";
 import smn from "../assets/8bit/smn.png";
-import smnIcon from "../assets/icon/smn.png";
+import smnIcon from "../assets/icons/smn.png";
 // HEALERS
 import whm from "../assets/8bit/whm.png";
-import whmIcon from "../assets/icon/whm.png";
+import whmIcon from "../assets/icons/whm.png";
 import ast from "../assets/8bit/ast.png";
-import astIcon from "../assets/icon/ast.png";
+import astIcon from "../assets/icons/ast.png";
 import sch from "../assets/8bit/sch.png";
-import schIcon from "../assets/icon/sch.png";
+import schIcon from "../assets/icons/sch.png";
 
 const JOBS = Object.freeze({
   DRK: {
