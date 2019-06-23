@@ -1,31 +1,18 @@
 import React from "react";
 import { Draggable } from "react-beautiful-dnd";
 import styled from "styled-components";
-
-interface IJob {
-  NAME: string;
-  ACRONYM?: string;
-  ROLE?: string;
-  ROLE_ALT?: string;
-  BIT?: string;
-  ICON?: string;
-  COLOR?: string;
-}
-
-interface Props {
-  children?: string;
-  job: IJob;
-  index: number;
-  key?: any;
-}
+import { IJobProps } from "../../types";
 
 const JobWrapper = styled.span`
   padding: 10px;
-  margin: 10px;
-  border: 1px solid red;
+  max-height: 100px;
 `;
 
-const Job: React.FC<Props> = (props: Props) => {
+const Img = styled.img`
+  height: 80px;
+`;
+
+const Job: React.FC<IJobProps> = (props: IJobProps) => {
   const { job, index } = props;
   return (
     <Draggable draggableId={job.NAME} index={index}>
@@ -35,7 +22,7 @@ const Job: React.FC<Props> = (props: Props) => {
           {...provided.draggableProps}
           {...provided.dragHandleProps}
         >
-          {job.NAME}
+          <Img src={job.BIT} alt={job.ACRONYM} />
         </JobWrapper>
       )}
     </Draggable>

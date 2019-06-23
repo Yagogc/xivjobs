@@ -1,3 +1,5 @@
+import ROLES from "./roles";
+
 // TANKS
 import war from "../assets/8bit/war.png";
 import warIcon from "../assets/icons/war.png";
@@ -32,8 +34,8 @@ const JOBS = Object.freeze({
   DRK: {
     NAME: "Dark Knight",
     ACRONYM: "DRK",
-    ROLE: "Tank",
-    ROLE_ALT: "Tank",
+    ROLE: ROLES.TANK.default,
+    ROLE_ALT: ROLES.TANK.ALT,
     BIT: drk,
     ICON: drkIcon,
     COLOR: ""
@@ -41,8 +43,8 @@ const JOBS = Object.freeze({
   PLD: {
     NAME: "Paladin",
     ACRONYM: "PLD",
-    ROLE: "Tank",
-    ROLE_ALT: "Tank",
+    ROLE: ROLES.TANK.default,
+    ROLE_ALT: ROLES.TANK.ALT,
     BIT: pld,
     ICON: pldIcon,
     COLOR: ""
@@ -50,8 +52,8 @@ const JOBS = Object.freeze({
   WAR: {
     NAME: "Warrior",
     ACRONYM: "WAR",
-    ROLE: "Tank",
-    ROLE_ALT: "Tank",
+    ROLE: ROLES.TANK.default,
+    ROLE_ALT: ROLES.TANK.ALT,
     BIT: war,
     ICON: warIcon,
     COLOR: ""
@@ -59,8 +61,8 @@ const JOBS = Object.freeze({
   WHM: {
     NAME: "White Mage",
     ACRONYM: "WHM",
-    ROLE: "Healer",
-    ROLE_ALT: "Healer",
+    ROLE: ROLES.HEALER.default,
+    ROLE_ALT: ROLES.HEALER.ALT,
     BIT: whm,
     ICON: whmIcon,
     COLOR: ""
@@ -68,8 +70,8 @@ const JOBS = Object.freeze({
   SCH: {
     NAME: "Scholar",
     ACRONYM: "SCH",
-    ROLE: "Healer",
-    ROLE_ALT: "Healer",
+    ROLE: ROLES.HEALER.default,
+    ROLE_ALT: ROLES.HEALER.ALT,
     BIT: sch,
     ICON: schIcon,
     COLOR: ""
@@ -77,8 +79,8 @@ const JOBS = Object.freeze({
   AST: {
     NAME: "Astrologian",
     ACRONYM: "AST",
-    ROLE: "Healer",
-    ROLE_ALT: "Healer",
+    ROLE: ROLES.HEALER.default,
+    ROLE_ALT: ROLES.HEALER.ALT,
     BIT: ast,
     ICON: astIcon,
     COLOR: ""
@@ -86,8 +88,8 @@ const JOBS = Object.freeze({
   DRG: {
     NAME: "Dragoon",
     ACRONYM: "DRG",
-    ROLE: "DPS",
-    ROLE_ALT: "Melee Physical DPS",
+    ROLE: ROLES.MDPS.default,
+    ROLE_ALT: ROLES.MDPS.ALT,
     BIT: drg,
     ICON: drgIcon,
     COLOR: ""
@@ -95,8 +97,8 @@ const JOBS = Object.freeze({
   MNK: {
     NAME: "Monk",
     ACRONYM: "MNK",
-    ROLE: "DPS",
-    ROLE_ALT: "Melee Physical DPS",
+    ROLE: ROLES.MDPS.default,
+    ROLE_ALT: ROLES.MDPS.ALT,
     BIT: mnk,
     ICON: mnkIcon,
     COLOR: ""
@@ -104,8 +106,8 @@ const JOBS = Object.freeze({
   NIN: {
     NAME: "Ninja",
     ACRONYM: "NIN",
-    ROLE: "DPS",
-    ROLE_ALT: "Melee Physical DPS",
+    ROLE: ROLES.MDPS.default,
+    ROLE_ALT: ROLES.MDPS.ALT,
     BIT: nin,
     ICON: ninIcon,
     COLOR: ""
@@ -113,8 +115,8 @@ const JOBS = Object.freeze({
   // SAM: {
   //   NAME: "Samurai",
   //   ACRONYM: "SAM",
-  //   ROLE: "DPS",
-  //   ROLE_ALT: "Melee Physical DPS",
+  //   ROLE: ROLES.MDPS.default,
+  //   ROLE_ALT: ROLES.MDPS.ALT,
   //   BIT: "",
   //   ICON: "",
   //   COLOR: ""
@@ -122,8 +124,8 @@ const JOBS = Object.freeze({
   BRD: {
     NAME: "Bard",
     ACRONYM: "BRD",
-    ROLE: "DPS",
-    ROLE_ALT: "Ranged Physical DPS",
+    ROLE: ROLES.PRDPS.default,
+    ROLE_ALT: ROLES.PRDPS.ALT,
     BIT: brd,
     ICON: brdIcon,
     COLOR: ""
@@ -131,8 +133,8 @@ const JOBS = Object.freeze({
   MCH: {
     NAME: "Machinist",
     ACRONYM: "MCH",
-    ROLE: "DPS",
-    ROLE_ALT: "Ranged Physical DPS",
+    ROLE: ROLES.PRDPS.default,
+    ROLE_ALT: ROLES.PRDPS.ALT,
     BIT: mch,
     ICON: mchIcon,
     COLOR: ""
@@ -140,8 +142,8 @@ const JOBS = Object.freeze({
   BLM: {
     NAME: "Black Mage",
     ACRONYM: "BLM",
-    ROLE: "DPS",
-    ROLE_ALT: "Ranged Magical DPS",
+    ROLE: ROLES.MRDPS.default,
+    ROLE_ALT: ROLES.MRDPS.ALT,
     BIT: blm,
     ICON: blmIcon,
     COLOR: ""
@@ -149,8 +151,8 @@ const JOBS = Object.freeze({
   SMN: {
     NAME: "Summoner",
     ACRONYM: "SMN",
-    ROLE: "DPS",
-    ROLE_ALT: "Ranged Magical DPS",
+    ROLE: ROLES.MRDPS.default,
+    ROLE_ALT: ROLES.MRDPS.ALT,
     BIT: smn,
     ICON: smnIcon,
     COLOR: ""
@@ -158,8 +160,8 @@ const JOBS = Object.freeze({
   // RDM: {
   //   NAME: "Red Mage",
   //   ACRONYM: "RDM",
-  //   ROLE: "DPS",
-  //   ROLE_ALT: "Ranged Magical DPS",
+  //   ROLE: ROLES.MRDPS.default,
+  //   ROLE_ALT: ROLES.MRDPS.ALT,
   //   BIT: "",
   //   ICON: "",
   //   COLOR: ""
